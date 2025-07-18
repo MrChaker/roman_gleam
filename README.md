@@ -112,4 +112,4 @@ The library provides proper error handling:
 
 ## Documentation
 
-Further documentation can be found at <https://hexdocs.pm/roman>.
+Further documentation can be found at <https://hexdocs.pm/gleam_roman/>.
