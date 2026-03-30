@@ -3,7 +3,8 @@ import gleam/list
 import gleam/order
 import gleam/string
 
-pub type Roman = List(Numeral)
+pub type Roman =
+  List(Numeral)
 
 pub type Numeral {
   I
@@ -56,8 +57,6 @@ fn numeral_from_str(char: String) -> Result(Numeral, RomanError) {
     _ -> Error(InvalidNumeralCharInput)
   }
 }
-
-
 
 pub fn string_to_roman(input: String) -> Result(Roman, RomanError) {
   let chars = string.split(input, "")

@@ -1,6 +1,8 @@
 import gleam/list
 import gleeunit
-import roman.{I, V, X, L, C, D, M, InvalidNumeralCharInput, ZeroOrNegativeIntegerInput}
+import roman.{
+  C, D, I, InvalidNumeralCharInput, L, M, V, X, ZeroOrNegativeIntegerInput,
+}
 
 pub fn main() -> Nil {
   string_to_roman()
