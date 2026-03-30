@@ -1,5 +1,5 @@
 name = "roman_gleam"
-version = "1.0.0"
+version = "1.0.1"
 
 description = "A Gleam library for converting between Roman numerals and integers, with support for both string and structured representations."
 licences = ["Apache-2.0"]
