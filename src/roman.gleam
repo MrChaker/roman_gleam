@@ -46,13 +46,13 @@ fn numeral_to_str(numeral: Numeral) -> String {
 
 fn numeral_from_str(char: String) -> Result(Numeral, RomanError) {
   case char {
-    "i" -> Ok(I)
-    "v" -> Ok(V)
-    "x" -> Ok(X)
-    "l" -> Ok(L)
-    "c" -> Ok(C)
-    "d" -> Ok(D)
-    "m" -> Ok(M)
+    "i" | "I" -> Ok(I)
+    "v" | "V" -> Ok(V)
+    "x" | "X" -> Ok(X)
+    "l" | "L" -> Ok(L)
+    "c" | "C" -> Ok(C)
+    "d" | "D" -> Ok(D)
+    "m" | "M" -> Ok(M)
     _ -> Error(InvalidNumeralCharInput)
   }
 }
@@ -116,7 +116,7 @@ fn loop_mappings(
     [#(secondary, primary), ..rest] -> {
       let #(new_val, numerals) = append_primary(val, primary, numerals)
       let diff = numeral_value(primary) - numeral_value(secondary)
-      case val >= diff {
+      case new_val >= diff {
         True -> {
           let new_val = new_val - diff
           let numerals = list.append(numerals, [secondary, primary])
