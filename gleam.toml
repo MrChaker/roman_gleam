@@ -1,10 +1,10 @@
-name = "gleam_roman"
-version = "1.0.1"
+name = "roman_gleam"
+version = "1.0.0"
 
 description = "A Gleam library for converting between Roman numerals and integers, with support for both string and structured representations."
 licences = ["Apache-2.0"]
-repository = { type = "github", user = "MrChaker", repo = "gleam_roman" }
-links = [{ title = "Website", href = "https://github.com/MrChaker/gleam_roman" }]
+repository = { type = "github", user = "MrChaker", repo = "roman_gleam" }
+links = [{ title = "Website", href = "https://github.com/MrChaker/roman_gleam" }]
 
 [dependencies]
 gleam_stdlib = ">= 0.44.0 and < 2.0.0"
